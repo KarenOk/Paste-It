@@ -1,0 +1,49 @@
+.view-paste {
+    margin: 30px;
+}
+
+.view-paste .content {
+    background-color: white;
+    width: 90%;
+    height: 65vh;
+    overflow-y: scroll;
+    margin: 0 auto;
+    box-shadow: 6px 10px 42px 0px rgba(0, 0, 0, 0.66);
+    border-radius: 4px;
+    padding: 20px;
+    padding-top: 60px;
+    line-height: 20px;
+    position: relative;
+}
+
+.view-paste button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 160px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 6px 16px 0px rgba(0, 0, 0, 0.35);
+    background-color: #f78b7a;
+    color: white;
+}
+
+.view-paste button.copied {
+    background-color: #f3aea4;
+    color: black;
+}
+
+.view-paste button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.view-paste .content p {
+    white-space: pre-line;
+}
