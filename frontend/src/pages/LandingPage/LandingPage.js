@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./LandingPage.css";
 import logo from "../../images/clipboard-white.svg";
 
@@ -15,7 +16,7 @@ const LandingPage = () => {
 			</nav>
 
 			<header className="box-2">
-				<h1>Paste It</h1>
+				<h1>PasteIt</h1>
 			</header>
 
 			<div className="box-3">
@@ -26,7 +27,9 @@ const LandingPage = () => {
 			</div>
 
 			<div className="box-4">
-				<button> Get Started </button>
+				<Link to="/create">
+					<button> Get Started </button>
+				</Link>
 			</div>
 		</div>
 	);

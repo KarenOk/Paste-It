@@ -2,3 +2,8 @@ body {
   margin: 0;
   font-family: Amiri, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: black;
+}
