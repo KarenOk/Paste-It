@@ -38,19 +38,3 @@
   box-shadow: 6px 10px 42px 0px rgba(0, 0, 0, 0.66);
   font-family: 'Syne Mono', monospace;
 }
-
-.app main {
-  margin: 30px;
-}
-
-.app main .container {
-  width: 90%;
-}
-
-.app textarea {
-  min-height: 70vh;
-  width: 100%;
-  box-shadow: 6px 10px 42px 0px rgba(0, 0, 0, 0.66);
-  border: none;
-  resize: vertical;
-}

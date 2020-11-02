@@ -1,4 +1,5 @@
 import "./App.css";
+import CreatePaste from "./pages/CreatePaste/CreatePaste";
 
 function App() {
 	return (
@@ -9,11 +10,7 @@ function App() {
 					<button> Publish Paste</button>
 				</div>
 			</header>
-			<main>
-				<div className="container">
-					<textarea></textarea>
-				</div>
-			</main>
+			<CreatePaste />
 		</div>
 	);
 }
