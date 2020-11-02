@@ -19,7 +19,9 @@ function App() {
 										<h1> PasteIt </h1>
 									</Link>
 									<div className="submit-cont">
-										<button> Publish Paste</button>
+										<Link to="/xyz">
+											<button> Publish Paste</button>
+										</Link>
 									</div>
 								</header>
 								<CreatePaste />
@@ -36,7 +38,9 @@ function App() {
 										<h1> PasteIt </h1>
 									</Link>
 									<div className="submit-cont">
-										<button> + New Paste</button>
+										<Link to="/new">
+											<button> + New Paste</button>
+										</Link>
 									</div>
 								</header>
 								<ViewPaste />

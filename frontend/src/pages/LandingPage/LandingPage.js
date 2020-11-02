@@ -27,7 +27,7 @@ const LandingPage = () => {
 			</div>
 
 			<div className="box-4">
-				<Link to="/create">
+				<Link to="/new">
 					<button> Get Started </button>
 				</Link>
 			</div>
