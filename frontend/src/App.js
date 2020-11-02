@@ -5,13 +5,13 @@ function App() {
 		<div className="app">
 			<header className="">
 				<h1> PasteIt </h1>
+				<div className="submit-cont">
+					<button> Publish Paste</button>
+				</div>
 			</header>
 			<main>
 				<div className="container">
 					<textarea></textarea>
-					<div className="submit-cont">
-						<button> Publish </button>
-					</div>
 				</div>
 			</main>
 		</div>
