@@ -1,0 +1,108 @@
+.landing {
+    background-image: url(../../images/Hinterrhein.png);
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing>* {
+    display: block;
+    background-color: white;
+    margin: 0;
+}
+
+.landing>*[class*="box-"] {
+    padding-left: 30px;
+}
+
+.landing .box-1 {
+    width: 30vw;
+    padding: 7vh 30px;
+}
+
+.landing .box-2 {
+    width: 60vw;
+    padding-top: 2vh;
+    padding-bottom: 20px;
+}
+
+.landing .box-3 {
+    width: 70vw;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.landing .box-4 {
+    height: 20vh;
+    width: 80vw;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.landing nav {
+    padding: 30px;
+}
+
+.landing nav a {
+    display: block;
+    margin: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #00213F;
+}
+
+.landing .logo-cont {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: #FDA99C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .logo {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 3px;
+}
+
+.landing h1, p {
+    margin: 0;
+}
+
+.landing h1 {
+    font-family: 'Syne Mono', monospace;
+    font-size: 4em;
+    color: #00213F;
+}
+
+.landing p {
+    max-width: 400px;
+}
+
+.landing button {
+    padding: 5px 20px;
+    border-radius: 4px;
+    background-color: #FDA99C;
+    border: none;
+    font-size: 1.2em;
+    font-family: Amiri, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .landing {
+        padding: 20px;
+    }
+    .landing>*[class*="box-"] {
+        width: 80%;
+        margin: 0 auto;
+        padding: 15px 30px;
+    }
+    .landing h1 {
+        font-size: 3em;
+    }
+}
