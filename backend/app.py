@@ -1,5 +1,6 @@
 import random
 import string
+import datetime
 
 from flask import Flask, jsonify, request, abort
 from flask_cors import CORS
@@ -65,8 +66,10 @@ def create_app():
         """
 
         paste = Paste.query.get(key)
-        # TODO: delete paste if expired
         if paste:
+            if datetime.datetime.now() >= paste.expires_at:
+                delete_paste(key)
+                abort(404)
             return jsonify({
                 "success": True,
                 "data": paste.format()
