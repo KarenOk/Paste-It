@@ -22,7 +22,7 @@ const LandingPage = () => {
 			<div className="box-3">
 				<p>
 					Online clipboard. Share text over the internet by generating a unique
-					URL. Others can access the contents of the taste via this URL.
+					URL. Others can access the contents of the paste via this URL.
 				</p>
 			</div>
 
