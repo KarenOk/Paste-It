@@ -1,118 +1,125 @@
 .landing {
-    background-image: url(../../images/Hinterrhein.png);
-    min-height: 100vh;
-    max-width: 100vw;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url(../../images/Hinterrhein.png);
+	min-height: 100vh;
+	max-width: 100vw;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 18px;
 }
 
-.landing>* {
-    display: block;
-    background-color: white;
-    margin: 0;
+.landing > * {
+	display: block;
+	background-color: white;
+	margin: 0;
+	margin-top: -1px;
 }
 
-.landing>*[class*="box-"] {
-    padding-left: 30px;
+.landing > *[class*="box-"] {
+	padding-left: 30px;
 }
 
 .landing .box-1 {
-    width: 30vw;
-    padding: 7vh 30px;
+	width: 30vw;
+	padding: 7vh 30px;
 }
 
 .landing .box-2 {
-    width: 60vw;
-    padding-top: 2vh;
-    padding-bottom: 20px;
+	width: 60vw;
+	padding-top: 2vh;
+	padding-bottom: 20px;
 }
 
 .landing .box-3 {
-    width: 70vw;
-    padding-top: 0;
-    padding-bottom: 20px;
+	width: 70vw;
+	padding-top: 0;
+	padding-bottom: 20px;
 }
 
 .landing .box-4 {
-    height: 20vh;
-    width: 80vw;
-    padding-top: 5px;
-    padding-bottom: 20px;
+	height: 25vh;
+	width: 80vw;
+	padding-top: 5px;
+	padding-bottom: 20px;
 }
 
 .landing nav {
-    padding: 30px;
+	padding: 30px;
 }
 
 .landing nav a {
-    display: block;
-    margin: 5px;
-    font-weight: bold;
-    color: #00213F;
+	display: block;
+	margin: 5px;
+	font-weight: bold;
+	color: #00213f;
 }
 
 .landing .logo-cont {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    background-color: #FDA99C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	background-color: #f58574;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .landing .logo-cont:hover {
-    box-shadow: 2px 6px 16px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: 2px 6px 16px 0px rgba(0, 0, 0, 0.35);
 }
 
 .landing .logo {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 3px;
+	width: 30px;
+	height: 30px;
+	margin-bottom: 3px;
 }
 
-.landing h1, p {
-    margin: 0;
+.landing h1,
+p {
+	margin: 0;
 }
 
 .landing h1 {
-    font-family: 'Syne Mono', monospace;
-    font-size: 4em;
-    color: #00213F;
+	font-family: "Syne Mono", monospace;
+	font-size: 4em;
+	color: #00213f;
 }
 
 .landing p {
-    max-width: 400px;
+	max-width: 450px;
 }
 
 .landing button {
-    padding: 5px 20px;
-    border-radius: 4px;
-    background-color: #FDA99C;
-    border: none;
-    font-size: 1.2em;
-    font-family: Amiri, sans-serif;
-    cursor: pointer;
-    box-shadow: 2px 6px 16px 0px rgba(0, 0, 0, 0.35);
+	padding: 5px 20px;
+	border-radius: 4px;
+	background-color: #f58574;
+	color: white;
+	border: none;
+	font-size: 1.2em;
+	font-family: Amiri, sans-serif;
+	cursor: pointer;
+	box-shadow: 2px 6px 16px 0px rgba(0, 0, 0, 0.35);
 }
 
 .landing button:hover {
-    box-shadow: 2px 6px 27px -1px rgba(0, 0, 0, 0.35);
-    transform: scale(1.1);
+	box-shadow: 2px 6px 27px -1px rgba(0, 0, 0, 0.35);
+	transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
-    .landing {
-        padding: 20px;
-    }
-    .landing>*[class*="box-"] {
-        width: 80%;
-        margin: 0 auto;
-        padding: 15px 30px;
-    }
-    .landing h1 {
-        font-size: 3em;
-    }
+	.landing {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.landing > *[class*="box-"] {
+		width: 80%;
+		margin: -1px auto 0;
+		padding: 15px 30px;
+	}
+	.landing h1 {
+		font-size: 3em;
+	}
 }
