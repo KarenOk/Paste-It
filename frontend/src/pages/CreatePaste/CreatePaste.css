@@ -1,18 +1,47 @@
 .create-paste {
 	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .create-paste .container {
+	width: 100%;
+}
+
+.create-paste .container>* {
+	min-height: 70vh;
 	width: 90%;
+	margin: 0 auto;
+	display: block;
+	box-shadow: 6px 10px 42px 0px rgba(0, 0, 0, 0.66);
 }
 
 .create-paste textarea {
-	min-height: 70vh;
-	width: 100%;
-	box-shadow: 6px 10px 42px 0px rgba(0, 0, 0, 0.66);
 	border: none;
 	resize: none;
 	padding: 20px;
 	line-height: 20px;
 	font-size: 16px;
+}
+
+.create-paste .success-message {
+	max-width: 500px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 18px;
+	padding: 20px;
+}
+
+.create-paste .success-message img {
+	width: 50%;
+}
+
+.create-paste .success-message a {
+	text-decoration: underline;
+	color: #00213F;
 }

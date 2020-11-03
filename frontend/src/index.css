@@ -7,3 +7,7 @@ a, a:visited, a:hover {
   text-decoration: none;
   color: black;
 }
+
+button:disabled {
+  opacity: 0.7;
+}
