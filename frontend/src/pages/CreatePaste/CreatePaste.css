@@ -1,18 +1,18 @@
 .create-paste {
-    margin: 30px;
+	margin: 30px;
 }
 
 .create-paste .container {
-    width: 90%;
+	width: 90%;
 }
 
 .create-paste textarea {
-    min-height: 70vh;
-    width: 100%;
-    box-shadow: 6px 10px 42px 0px rgba(0, 0, 0, 0.66);
-    border: none;
-    resize: vertical;
-    padding: 20px;
-    line-height: 20px;
-    font-size: 16px;
+	min-height: 70vh;
+	width: 100%;
+	box-shadow: 6px 10px 42px 0px rgba(0, 0, 0, 0.66);
+	border: none;
+	resize: none;
+	padding: 20px;
+	line-height: 20px;
+	font-size: 16px;
 }
