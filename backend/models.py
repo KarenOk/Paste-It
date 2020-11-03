@@ -45,6 +45,6 @@ class Paste(db.Model):
         return {
             "key": self.key,
             "content": self.content,
-            "expires_at": self.expires_at,
-            "created_at": self.created_at
+            "expires_at": datetime.datetime.strftime(self.expires_at, '%Y-%m-%d %H:%M:%S.%f'),
+            "created_at": datetime.datetime.strftime(self.created_at, '%Y-%m-%d %H:%M:%S.%f'),
         }
