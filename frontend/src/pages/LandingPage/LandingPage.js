@@ -7,12 +7,12 @@ const LandingPage = () => {
 	return (
 		<div className="landing">
 			<nav className="box-1">
-				<a href="#!" className="logo-cont">
+				<Link to="/" className="logo-cont">
 					<img src={logo} alt="Paste It" className="logo" />
-				</a>
-				<a href="#!"> About </a>
-				<a href="#!"> Contact </a>
-				<a href="#!"> Contribute </a>
+				</Link>
+				<a href="https://github.com/KarenOk/Paste-It/blob/master/README.md"> About </a>
+				<a href="mailto:karenokonkwo29@gmail.com"> Contact </a>
+				<a href="https://github.com/KarenOk/Paste-It"> Contribute </a>
 			</nav>
 
 			<header className="box-2">
@@ -21,8 +21,8 @@ const LandingPage = () => {
 
 			<div className="box-3">
 				<p>
-					Online clipboard. Share text over the internet by generating a unique
-					URL. Others can access the contents of the paste via this URL.
+					Online clipboard. Share text over the internet by generating a unique URL. Others can access the
+					contents of the paste via this URL.
 				</p>
 			</div>
 
