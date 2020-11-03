@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import copy from "../../images/copy.svg";
 import "./ViewPaste.css";
 
@@ -22,28 +23,41 @@ const ViewPaste = () => {
 	};
 
 	return (
-		<main className="view-paste">
-			<div className="content">
-				{navigator && (
-					<button
-						className={copied ? "copied" : ""}
-						disabled={copied}
-						onClick={copyToClipboard}
-					>
-						{copied ? (
-							"Copied!"
-						) : (
-							<>
-								<img src={copy} alt="" />
-								Copy to Clipboard
-							</>
-						)}
-					</button>
-				)}
+		<div className="app">
+			<header className="">
+				<Link to="/">
+					<h1> PasteIt </h1>
+				</Link>
+				<div className="submit-cont">
+					<Link to="/new">
+						<button> + New Paste</button>
+					</Link>
+				</div>
+			</header>
 
-				<p> {text}</p>
-			</div>
-		</main>
+			<main className="view-paste">
+				<div className="content">
+					{navigator && (
+						<button
+							className={copied ? "copied" : ""}
+							disabled={copied}
+							onClick={copyToClipboard}
+						>
+							{copied ? (
+								"Copied!"
+							) : (
+								<>
+									<img src={copy} alt="" />
+									Copy to Clipboard
+								</>
+							)}
+						</button>
+					)}
+
+					<p> {text}</p>
+				</div>
+			</main>
+		</div>
 	);
 };
 

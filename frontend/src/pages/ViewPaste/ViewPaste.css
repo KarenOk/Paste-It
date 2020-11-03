@@ -33,10 +33,6 @@
     color: white;
 }
 
-.view-paste button.copied {
-    opacity: 0.7;
-}
-
 .view-paste button img {
     width: 20px;
     height: 20px;
