@@ -55,9 +55,24 @@ def create_app():
 
         return jsonify({
             "success": True,
-            "key": key,
-            "content": content
+            "data": paste.format()
         })
+
+    @app.route("/pastes/<key>")
+    def get_paste(key):
+        """
+            Get paste using its unique key
+        """
+
+        paste = Paste.query.get(key)
+        # TODO: delete paste if expired
+        if paste:
+            return jsonify({
+                "success": True,
+                "data": paste.format()
+            })
+        else:
+            abort(404)
 
     @app.errorhandler(500)
     def internal_server_error(error):
