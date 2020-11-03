@@ -74,6 +74,21 @@ def create_app():
         else:
             abort(404)
 
+    @app.route("/pastes/<key>", methods=["DELETE"])
+    def delete_paste(key):
+        """
+            Delete paste using its unique key
+        """
+        paste = Paste.query.get(key)
+        if paste:
+            paste.delete()
+            return jsonify({
+                "success": True,
+                "deleted": key
+            })
+        else:
+            abort(404)
+
     @app.errorhandler(500)
     def internal_server_error(error):
         return jsonify({
