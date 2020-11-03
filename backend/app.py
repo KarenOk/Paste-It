@@ -19,6 +19,17 @@ def create_app():
     setup_db(app)
     CORS(app)
 
+    @app.after_request
+    def after_request(response):
+        """ 
+            Set access control headers
+        """
+        response.headers.add("Access-Control-Allow-Headers",
+                             "Content-Type, Authorization")
+        response.headers.add("Access-Control-Allow-Methods",
+                             "GET,POST,PATCH,DELETE,OPTIONS")
+        return response
+
     @app.route("/")
     def index():
         return "Welcome to PasteIt API. This service is up and running."
