@@ -53,7 +53,10 @@ const CreatePaste = () => {
 							</p>
 						</div>
 					) : (
-						<textarea onChange={(e) => setContent(e.target.value)}></textarea>
+						<textarea
+							onChange={(e) => setContent(e.target.value)}
+							placeholder="Input some text here..."
+						></textarea>
 					)}
 				</div>
 			</main>
