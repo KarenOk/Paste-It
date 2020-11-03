@@ -59,6 +59,38 @@ def create_app():
             "content": content
         })
 
+    @app.errorhandler(500)
+    def internal_server_error(error):
+        return jsonify({
+            "success": False,
+            "message": "An error occurred on our end.",
+            "error": 500
+        }), 500
+
+    @app.errorhandler(404)
+    def not_found(error):
+        return jsonify({
+            "success": False,
+            "message": "The requested resource was not found.",
+            "error": 404
+        }), 404
+
+    @app.errorhandler(400)
+    def bad_request(error):
+        return jsonify({
+            "success": False,
+            "message": "Your request was not formatted properly.",
+            "error": 400
+        }), 400
+
+    @app.errorhandler(405)
+    def method_not_allowed(error):
+        return jsonify({
+            "success": False,
+            "message": "Method not allowed.",
+            "error": 405
+        }), 405
+
     return app
 
 
