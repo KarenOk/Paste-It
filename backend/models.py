@@ -25,7 +25,7 @@ class Paste(db.Model):
     expires_at = db.Column(db.DateTime, default=lambda: datetime.datetime.utcnow() +
                            datetime.timedelta(days=1))
 
-    def __init__(self, key, content, expires_at):
+    def __init__(self, key, content, expires_at=None):
         self.key = key
         self.content = content
         self.expires_at = expires_at
