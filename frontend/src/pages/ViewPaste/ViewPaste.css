@@ -49,3 +49,7 @@
 	height: 20px;
 	margin-right: 5px;
 }
+
+.view-paste pre {
+	white-space: pre-wrap;
+}
