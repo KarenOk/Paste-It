@@ -73,6 +73,24 @@ def create_app():
             "data": paste.format()
         })
 
+    @app.route("/pastes/all")
+    def get_all_pastes():
+        """
+            Get all pastes
+        """
+
+        try:
+            pastes = Paste.query.all()
+            pastes = [paste.format() for paste in pastes]
+
+            return jsonify({
+                "success": True,
+                "total_pastes": len(pastes),
+                "data": pastes
+            })
+        except Exception:
+            abort(500)
+
     @app.route("/pastes/<key>")
     def get_paste(key):
         """
