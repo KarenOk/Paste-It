@@ -8,8 +8,10 @@ import { BASE_URL } from "../../BASE_URL";
 const CreatePaste = () => {
 	const [content, setContent] = useState("");
 	const [paste, setPaste] = useState(null);
+	const [loading, setLoading] = useState(false);
 
 	const publishPaste = async () => {
+		setLoading(true);
 		try {
 			let res = await Axios({
 				method: "POST",
@@ -23,6 +25,7 @@ const CreatePaste = () => {
 			console.log(err.response.data);
 			setPaste(null);
 		}
+		setLoading(false);
 	};
 
 	return (
@@ -32,9 +35,11 @@ const CreatePaste = () => {
 					<h1> PasteIt </h1>
 				</Link>
 				<div className="submit-cont">
-					<button disabled={!content || paste} onClick={publishPaste}>
-						{" "}
-						Publish Paste
+					<button
+						disabled={!content || loading || paste}
+						onClick={publishPaste}
+					>
+						{loading ? "Publishing..." : "Publish Paste"}
 					</button>
 				</div>
 			</header>
