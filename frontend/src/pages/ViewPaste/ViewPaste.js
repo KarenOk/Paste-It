@@ -6,7 +6,7 @@ import { BASE_URL } from "../../BASE_URL";
 import copy from "../../images/copy.svg";
 import loader from "../../images/loader.gif";
 
-const ViewPaste = (props) => {
+const ViewPaste = props => {
 	const [copied, setCopied] = useState(false);
 	const [paste, setPaste] = useState(null);
 
@@ -18,7 +18,7 @@ const ViewPaste = (props) => {
 				const res = await Axios({
 					method: "GET",
 					url: "/pastes/" + key,
-					baseURL: BASE_URL,
+					baseURL: BASE_URL
 				});
 				setPaste(res.data.data);
 			} catch (err) {
@@ -59,11 +59,7 @@ const ViewPaste = (props) => {
 				{paste ? (
 					<div className="content">
 						{navigator && (
-							<button
-								className={copied ? "copied" : ""}
-								disabled={copied}
-								onClick={copyToClipboard}
-							>
+							<button className={copied ? "copied" : ""} disabled={copied} onClick={copyToClipboard}>
 								{copied ? (
 									"Copied!"
 								) : (
@@ -75,7 +71,7 @@ const ViewPaste = (props) => {
 							</button>
 						)}
 
-						<p> {paste["content"]}</p>
+						<pre> {paste["content"]}</pre>
 					</div>
 				) : (
 					<div className="content loader">
