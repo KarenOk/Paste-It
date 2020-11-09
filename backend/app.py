@@ -106,6 +106,25 @@ def create_app():
         else:
             abort(404)
 
+    @app.route("/pastes/expired", methods=["DELETE"])
+    def delete_expired_pastes():
+        """
+            Delete all expired pastes
+        """
+
+        try:
+            pastes = Paste.query.filter(
+                Paste.expires_at <= datetime.datetime.now()).delete(synchronize_session=False)
+            db.session.commit()
+
+            return jsonify({
+                "success": True,
+                "no_of_records": pastes
+            })
+
+        except Exception:
+            abort(500)
+
     @app.errorhandler(500)
     def internal_server_error(error):
         return jsonify({
