@@ -30,7 +30,7 @@ export FLASK_APP=app.py
 export FLASK_ENV=development
 ```
 
-After setting the above environment variables, run `flask run` to start the server. The server will run on `https://paste-it-api.herokuapp.com`.
+After setting the above environment variables, run `flask run` to start the server. The server will run on `http://localhost:5000`.
 
 The endpoints have been gathered in a [postman](https://www.postman.com/) collection to aid ease of use. To run the endpoints using [Postman](https://www.postman.com/) import the postman collection `./project_name.postman_collection.json`.
 
