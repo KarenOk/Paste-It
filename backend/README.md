@@ -30,7 +30,7 @@ export FLASK_APP=app.py
 export FLASK_ENV=development
 ```
 
-After setting the above environment variables, run `flask run` to start the server. The server will run on `http://localhost:5000`.
+After setting the above environment variables, run `flask run` to start the server. The server will run on `https://paste-it-api.herokuapp.com`.
 
 The endpoints have been gathered in a [postman](https://www.postman.com/) collection to aid ease of use. To run the endpoints using [Postman](https://www.postman.com/) import the postman collection `./project_name.postman_collection.json`.
 
@@ -108,7 +108,7 @@ This endpoint takes in no query parameters
 
 ##### Sample Request
 
-`curl http://localhost:5000/paste -X POST -H "{Content-Type: 'application/json'}" -d '{"content": "This is some paste content."}'`
+`curl https://paste-it-api.herokuapp.com/paste -X POST -H "{Content-Type: 'application/json'}" -d '{"content": "This is some paste content."}'`
 
 ##### Sample Response
 
@@ -141,7 +141,7 @@ This endpoint does not require a request body.
 
 ##### Sample Request
 
-`curl http://localhost:5000/pastes/abcd`
+`curl https://paste-it-api.herokuapp.com/pastes/abcd`
 
 ##### Sample Response
 
@@ -174,7 +174,7 @@ This endpoint requires no request body.
 
 ##### Sample Request
 
-`curl http://localhost:5000/pastes/abcd -X DELETE`
+`curl https://paste-it-api.herokuapp.com/pastes/abcd -X DELETE`
 
 ##### Sample Response
 
@@ -202,7 +202,7 @@ This endpoint requires no request body.
 
 ##### Sample Request
 
-`curl http://localhost:5000/pastes/expired -X DELETE`
+`curl https://paste-it-api.herokuapp.com/pastes/expired -X DELETE`
 
 ##### Sample Response
 
