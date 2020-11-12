@@ -2,7 +2,7 @@
 
 PasteIt is an online clipboard. Share text over the internet by generating a unique URL. Others can access the contents of the paste via this URL.
 
-Click here to view the [application](https://pasteit.netlify.app/). The backend API is hosted on Heroku and can be accessed using the following BASE_URL - `https://paste-it-api.herokuapp.com`. Click here to view the [PasteIt API documentation](./backend/README.md).
+Click here to view the [application](https://pasteit.netlify.app/). The backend API is hosted on Heroku and can be accessed using the following BASE_URL - `https://paste-it-api.herokuapp.com`. Click here to view the [PasteIt API documentation](./backend/README.md#api-reference).
 
 ## Getting Started (Run Locally)
 
