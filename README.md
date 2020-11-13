@@ -6,7 +6,7 @@ Click here to view the [application](https://pasteit.netlify.app/). The backend 
 
 ## Getting Started (Run Locally)
 
-This project makes use of **ReactJS** and **Node** for the frontend, with **Flask**, **PostgreSQL** and **SQLAlchemy** for the backend. Include any other crucial tool used in this project. To be able to run this project locally, all the aforementioned tools have to be set up properly.
+This project makes use of **ReactJS** and **Node** for the frontend, with **Flask**, **PostgreSQL** and **SQLAlchemy** for the backend. To be able to run this project locally, all the aforementioned tools have to be set up properly.
 
 ### Backend
 
